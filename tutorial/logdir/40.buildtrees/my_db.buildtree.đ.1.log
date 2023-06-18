@@ -1,0 +1,97 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-allphones	no	no
+-cntthresh	0.00001	1.000000e-05
+-csplitmax	100	2000
+-csplitmin	1	1
+-csplitthr	8e-4	0.000000e+00
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-meanfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/means
+-mixwfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/mixture_weights
+-moddeffn		/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_architecture/my_db.untied.mdef
+-mwfloor	1e-4	1.000000e-08
+-phone			đ
+-psetfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_architecture/my_db.tree_questions
+-ssplitmax	5	7
+-ssplitmin	1	1
+-ssplitthr	8e-4	0.000000e+00
+-state			1
+-stwt			1.0,0.05,0.0,
+-treefn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/trees/my_db.unpruned/đ-1.dtree
+-ts2cbfn	.semi.	.cont.
+-varfloor	0.00001	1.000000e-05
+-varfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/variances
+
+INFO: main.c(223): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_architecture/my_db.untied.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 10256 total models defined (32 base, 10224 tri)
+INFO: model_def_io.c(575): 41024 total states
+INFO: model_def_io.c(576): 30768 total tied states
+INFO: model_def_io.c(577): 96 total tied CI states
+INFO: model_def_io.c(578): 32 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(242): Building trees for [đ a a i] through [đ u m i]
+INFO: main.c(268): Covering states |[29949 30023]| == 75
+INFO: main.c(275): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/mixture_weights
+INFO: s3mixw_io.c(172): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/mixture_weights [75x1x1 array]
+INFO: main.c(311): 25 of 25 models have observation count greater than 0.000010
+INFO: main.c(95): nrm stwt: 0.045 0.909 0.045 
+INFO: s3gau_io.c(168): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/means [30768x1x1 array]
+INFO: s3gau_io.c(168): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_parameters/my_db.cd_cont_untied/variances [30768x1x1 array]
+INFO: main.c(549): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial/model_architecture/my_db.tree_questions
+INFO: main.c(587): 180 total simple questions (172 phone; 8 word bndry)
+INFO: main.c(589): 42 Left Only questions, and 42 Right Only questions
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -2.573e+05 3.690e+02 1.184e+03
+|    ( QUESTION0_0_R 1 -2.459e+05 2.501e+02 1.130e+03
+|        ( WDBNDRY_B 0 -2.431e+05 1.009e+02 1.117e+03
+|            ( - -1.689e+03 2 0)
+|            ( - -2.413e+05 14 0))
+|        ( - -2.596e+03 1 0))
+|    ( WDBNDRY_B 0 -1.100e+04 1.886e+02 5.403e+01
+|        ( - -1.072e+03 1 0)
+|        ( - -9.742e+03 7 0)))
+s>    ( QUESTION0 -1 -2.573e+05 3.690e+02 1.184e+03
+s>        ( QUESTION0_0_R 1 -2.459e+05 2.501e+02 1.130e+03
+s>            ( WDBNDRY_B 0 -2.431e+05 1.009e+02 1.117e+03
+s>                ( - -1.689e+03 2 0)
+s>                ( - -2.413e+05 14 0))
+s>            ( - -2.596e+03 1 0))
+s>        ( WDBNDRY_B 0 -1.100e+04 1.886e+02 5.403e+01
+s>            ( - -1.072e+03 1 0)
+s>            ( - -9.742e+03 7 0)))INFO: dtree.c(1315): Comp split 0
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -2.431e+05 1.009e+02 1.117e+03
+|    ( - -1.689e+03 2 0)
+|    ( - -2.413e+05 14 0))
+s>    ( WDBNDRY_B 0 -2.431e+05 1.009e+02 1.117e+03
+s>        ( - -1.689e+03 2 0)
+s>        ( - -2.413e+05 14 0))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_0_R 1 -1.378e+04 1.848e+02 6.704e+01
+|    ( WDBNDRY_B 0 -1.100e+04 1.886e+02 5.403e+01
+|        ( - -1.072e+03 1 0)
+|        ( - -9.742e+03 7 0))
+|    ( - -2.596e+03 1 0))
+s>    ( QUESTION0_0_R 1 -1.378e+04 1.848e+02 6.704e+01
+s>        ( WDBNDRY_B 0 -1.100e+04 1.886e+02 5.403e+01
+s>            ( - -1.072e+03 1 0)
+s>            ( - -9.742e+03 7 0))
+s>        ( - -2.596e+03 1 0))INFO: dtree.c(1315): Comp split 1
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -3.852e+03 1.829e+02 1.901e+01
+|    ( - -1.072e+03 1 0)
+|    ( - -2.596e+03 1 0))
+s>    ( WDBNDRY_B 0 -3.852e+03 1.829e+02 1.901e+01
+s>        ( - -1.072e+03 1 0)
+s>        ( - -2.596e+03 1 0))INFO: dtree.c(1315): Comp split 2
+INFO: dtree.c(1315): Comp split 3
+INFO: dtree.c(1315): Comp split 4
+INFO: dtree.c(1318): stop. leaf nodes are specific
+Wed Mar 15 21:00:48 2023

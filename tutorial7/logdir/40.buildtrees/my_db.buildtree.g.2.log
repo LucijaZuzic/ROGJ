@@ -1,0 +1,1304 @@
+Current configuration:
+[NAME]		[DEFLT]	[VALUE]
+-allphones	no	no
+-cntthresh	0.00001	1.000000e-05
+-csplitmax	100	2000
+-csplitmin	1	1
+-csplitthr	8e-4	0.000000e+00
+-example	no	no
+-fullvar	no	no
+-help		no	no
+-meanfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/means
+-mixwfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/mixture_weights
+-moddeffn		/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_architecture/my_db.untied.mdef
+-mwfloor	1e-4	1.000000e-08
+-phone			g
+-psetfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_architecture/my_db.tree_questions
+-ssplitmax	5	7
+-ssplitmin	1	1
+-ssplitthr	8e-4	0.000000e+00
+-state			2
+-stwt			1.0,0.05,0.0,
+-treefn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/trees/my_db.unpruned/g-2.dtree
+-ts2cbfn	.semi.	.cont.
+-varfloor	0.00001	1.000000e-05
+-varfn			/home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/variances
+
+INFO: main.c(223): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_architecture/my_db.untied.mdef
+INFO: model_def_io.c(573): Model definition info:
+INFO: model_def_io.c(574): 10762 total models defined (32 base, 10730 tri)
+INFO: model_def_io.c(575): 43048 total states
+INFO: model_def_io.c(576): 32286 total tied states
+INFO: model_def_io.c(577): 96 total tied CI states
+INFO: model_def_io.c(578): 32 total tied transition matrices
+INFO: model_def_io.c(579): 4 max state/model
+INFO: model_def_io.c(580): 4 min state/model
+INFO: main.c(242): Building trees for [g NOISE a b] through [g ć o b]
+INFO: main.c(268): Covering states |[9492 10130]| == 639
+INFO: main.c(275): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/mixture_weights
+INFO: s3mixw_io.c(172): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/mixture_weights [639x1x1 array]
+INFO: main.c(311): 212 of 213 models have observation count greater than 0.000010
+INFO: main.c(95): nrm stwt: 0.000 0.048 0.952 
+INFO: s3gau_io.c(168): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/means [32286x1x1 array]
+INFO: s3gau_io.c(168): Read /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_parameters/my_db.cd_cont_untied/variances [32286x1x1 array]
+INFO: main.c(549): Reading: /home/lucija/Documents/Zadnji semestar/ROGJ/Prezentacije/CMUspinx/tutorial7/model_architecture/my_db.tree_questions
+INFO: main.c(587): 180 total simple questions (172 phone; 8 word bndry)
+INFO: main.c(589): 42 Left Only questions, and 42 Right Only questions
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_0_R 1 -4.188e+06 2.689e+04 1.834e+04
+|    ( QUESTION0 1 -2.338e+06 1.116e+04 1.019e+04
+|        ( WDBNDRY_E 0 -1.586e+06 1.137e+04 6.957e+03
+|            ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+|            ( - -1.279e+06 86 0 WDBNDRY_B 0 1.918e+03 5.636e+03))
+|        ( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+|            ( - -2.804e+05 29 0 QUESTION4 -1 6.851e+02 1.250e+03)
+|            ( - -4.549e+05 18 0 QUESTION0 -1 1.195e+03 1.979e+03)))
+|    ( QUESTION0_17_R 1 -1.824e+06 1.173e+04 8.152e+03
+|        ( - -6.669e+05 10 0 WDBNDRY_E 0 4.048e+03 3.019e+03)
+|        ( WDBNDRY_E 0 -1.145e+06 9.873e+03 5.134e+03
+|            ( QUESTION0_3_R 1 -6.893e+05 4.669e+03 3.092e+03
+|                ( - -1.396e+05 6 0 QUESTION11 1 1.620e+03 6.288e+02)
+|                ( - -5.450e+05 35 0 QUESTION0_14_R 1 2.529e+03 2.463e+03))
+|            ( - -4.459e+05 15 0 WDBNDRY_B 0 1.494e+03 2.042e+03))))
+s>    ( QUESTION0_0_R 1 -4.188e+06 2.689e+04 1.834e+04
+s>        ( QUESTION0 1 -2.338e+06 1.116e+04 1.019e+04
+s>            ( WDBNDRY_E 0 -1.586e+06 1.137e+04 6.957e+03
+s>                ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+s>                ( - -1.279e+06 86 0 WDBNDRY_B 0 1.918e+03 5.636e+03))
+s>            ( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+s>                ( - -2.804e+05 29 0 QUESTION4 -1 6.851e+02 1.250e+03)
+s>                ( - -4.549e+05 18 0 QUESTION0 -1 1.195e+03 1.979e+03)))
+s>        ( QUESTION0_17_R 1 -1.824e+06 1.173e+04 8.152e+03
+s>            ( - -6.669e+05 10 0 WDBNDRY_E 0 4.048e+03 3.019e+03)
+s>            ( WDBNDRY_E 0 -1.145e+06 9.873e+03 5.134e+03
+s>                ( QUESTION0_3_R 1 -6.893e+05 4.669e+03 3.092e+03
+s>                    ( - -1.396e+05 6 0 QUESTION11 1 1.620e+03 6.288e+02)
+s>                    ( - -5.450e+05 35 0 QUESTION0_14_R 1 2.529e+03 2.463e+03))
+s>                ( - -4.459e+05 15 0 WDBNDRY_B 0 1.494e+03 2.042e+03))))INFO: dtree.c(1315): Comp split 0
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 1 -2.033e+06 1.354e+04 8.865e+03
+|    ( WDBNDRY_B 0 -1.279e+06 1.918e+03 5.636e+03
+|        ( - -2.407e+05 45 0 QUESTION0 -1 5.419e+02 1.070e+03)
+|        ( QUESTION14 -1 -1.037e+06 6.115e+02 4.566e+03
+|            ( - -1.827e+04 9 0)
+|            ( - -1.018e+06 32 0 QUESTION0 -1 3.788e+02 4.483e+03)))
+|    ( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+|        ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+|            ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+|            ( - -2.411e+05 26 0 QUESTION1 -1 4.862e+02 1.075e+03))
+|        ( QUESTION0 -1 -4.549e+05 1.195e+03 1.979e+03
+|            ( WDBNDRY_E 0 -4.202e+05 7.668e+02 1.830e+03
+|                ( - -1.708e+04 3 0)
+|                ( - -4.023e+05 10 0))
+|            ( - -3.346e+04 5 0 QUESTION14 -1 1.422e+02 1.484e+02))))
+s>    ( QUESTION0 1 -2.033e+06 1.354e+04 8.865e+03
+s>        ( WDBNDRY_B 0 -1.279e+06 1.918e+03 5.636e+03
+s>            ( - -2.407e+05 45 0 QUESTION0 -1 5.419e+02 1.070e+03)
+s>            ( QUESTION14 -1 -1.037e+06 6.115e+02 4.566e+03
+s>                ( - -1.827e+04 9 0)
+s>                ( - -1.018e+06 32 0 QUESTION0 -1 3.788e+02 4.483e+03)))
+s>        ( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+s>            ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+s>                ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+s>                ( - -2.411e+05 26 0 QUESTION1 -1 4.862e+02 1.075e+03))
+s>            ( QUESTION0 -1 -4.549e+05 1.195e+03 1.979e+03
+s>                ( WDBNDRY_E 0 -4.202e+05 7.668e+02 1.830e+03
+s>                    ( - -1.708e+04 3 0)
+s>                    ( - -4.023e+05 10 0))
+s>                ( - -3.346e+04 5 0 QUESTION14 -1 1.422e+02 1.484e+02))))INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_17_R 1 -2.126e+06 1.230e+04 9.473e+03
+|    ( WDBNDRY_E 0 -6.669e+05 4.048e+03 3.019e+03
+|        ( - -1.800e+05 5 0)
+|        ( - -4.829e+05 5 0 QUESTION0 -1 1.665e+02 2.208e+03))
+|    ( WDBNDRY_I 0 -1.447e+06 1.070e+04 6.454e+03
+|        ( - -3.760e+05 5 0 QUESTION0_2_R 1 2.340e+02 1.724e+03)
+|        ( QUESTION0_0_R 1 -1.060e+06 5.667e+03 4.730e+03
+|            ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+|            ( QUESTION0_3_R 1 -7.592e+05 4.961e+03 3.409e+03
+|                ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+|                    ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+|                    ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+|                ( QUESTION0_14_R 1 -6.147e+05 2.643e+03 2.780e+03
+|                    ( - -1.092e+05 2 0)
+|                    ( - -5.028e+05 43 0 QUESTION4 1 1.531e+03 2.272e+03))))))
+s>    ( QUESTION0_17_R 1 -2.126e+06 1.230e+04 9.473e+03
+s>        ( WDBNDRY_E 0 -6.669e+05 4.048e+03 3.019e+03
+s>            ( - -1.800e+05 5 0)
+s>            ( - -4.829e+05 5 0 QUESTION0 -1 1.665e+02 2.208e+03))
+s>        ( WDBNDRY_I 0 -1.447e+06 1.070e+04 6.454e+03
+s>            ( - -3.760e+05 5 0 QUESTION0_2_R 1 2.340e+02 1.724e+03)
+s>            ( QUESTION0_0_R 1 -1.060e+06 5.667e+03 4.730e+03
+s>                ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+s>                ( QUESTION0_3_R 1 -7.592e+05 4.961e+03 3.409e+03
+s>                    ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+s>                        ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+s>                        ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+s>                    ( QUESTION0_14_R 1 -6.147e+05 2.643e+03 2.780e+03
+s>                        ( - -1.092e+05 2 0)
+s>                        ( - -5.028e+05 43 0 QUESTION4 1 1.531e+03 2.272e+03))))))INFO: dtree.c(1315): Comp split 1
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+|    ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+|        ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+|        ( QUESTION1 -1 -2.411e+05 4.862e+02 1.075e+03
+|            ( QUESTION19 -1 -3.161e+04 2.450e+02 1.376e+02
+|                ( - -4.113e+03 2 0)
+|                ( - -2.726e+04 12 0 QUESTION16 -1 1.911e+02 1.185e+02))
+|            ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+|                ( - -8.594e+03 2 0)
+|                ( - -2.002e+05 10 0))))
+|    ( QUESTION0 -1 -4.549e+05 1.195e+03 1.979e+03
+|        ( WDBNDRY_E 0 -4.202e+05 7.668e+02 1.830e+03
+|            ( - -1.708e+04 3 0)
+|            ( - -4.023e+05 10 0))
+|        ( - -3.346e+04 5 0 QUESTION14 -1 1.422e+02 1.484e+02)))
+s>    ( WDBNDRY_B 0 -7.402e+05 4.966e+03 3.229e+03
+s>        ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+s>            ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+s>            ( QUESTION1 -1 -2.411e+05 4.862e+02 1.075e+03
+s>                ( QUESTION19 -1 -3.161e+04 2.450e+02 1.376e+02
+s>                    ( - -4.113e+03 2 0)
+s>                    ( - -2.726e+04 12 0 QUESTION16 -1 1.911e+02 1.185e+02))
+s>                ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+s>                    ( - -8.594e+03 2 0)
+s>                    ( - -2.002e+05 10 0))))
+s>        ( QUESTION0 -1 -4.549e+05 1.195e+03 1.979e+03
+s>            ( WDBNDRY_E 0 -4.202e+05 7.668e+02 1.830e+03
+s>                ( - -1.708e+04 3 0)
+s>                ( - -4.023e+05 10 0))
+s>            ( - -3.346e+04 5 0 QUESTION14 -1 1.422e+02 1.484e+02)))INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -1.279e+06 1.918e+03 5.636e+03
+|    ( QUESTION0 -1 -2.407e+05 5.419e+02 1.070e+03
+|        ( QUESTION2_0_L -1 -2.071e+05 2.538e+02 9.264e+02
+|            ( - -2.049e+05 20 0)
+|            ( - -1.949e+03 1 0))
+|        ( QUESTION19 -1 -3.302e+04 3.031e+02 1.437e+02
+|            ( - -4.864e+03 1 0)
+|            ( - -2.785e+04 23 0 QUESTION11 -1 1.622e+02 1.207e+02)))
+|    ( QUESTION14 -1 -1.037e+06 6.115e+02 4.566e+03
+|        ( - -1.827e+04 9 0)
+|        ( QUESTION0 -1 -1.018e+06 3.788e+02 4.483e+03
+|            ( - -9.941e+05 25 0 QUESTION2_0_L -1 1.630e+02 4.377e+03)
+|            ( QUESTION18 -1 -2.357e+04 3.097e+02 1.056e+02
+|                ( - -2.671e+03 1 0)
+|                ( - -2.059e+04 6 0 QUESTION2 -1 2.306e+02 9.258e+01)))))
+s>    ( WDBNDRY_B 0 -1.279e+06 1.918e+03 5.636e+03
+s>        ( QUESTION0 -1 -2.407e+05 5.419e+02 1.070e+03
+s>            ( QUESTION2_0_L -1 -2.071e+05 2.538e+02 9.264e+02
+s>                ( - -2.049e+05 20 0)
+s>                ( - -1.949e+03 1 0))
+s>            ( QUESTION19 -1 -3.302e+04 3.031e+02 1.437e+02
+s>                ( - -4.864e+03 1 0)
+s>                ( - -2.785e+04 23 0 QUESTION11 -1 1.622e+02 1.207e+02)))
+s>        ( QUESTION14 -1 -1.037e+06 6.115e+02 4.566e+03
+s>            ( - -1.827e+04 9 0)
+s>            ( QUESTION0 -1 -1.018e+06 3.788e+02 4.483e+03
+s>                ( - -9.941e+05 25 0 QUESTION2_0_L -1 1.630e+02 4.377e+03)
+s>                ( QUESTION18 -1 -2.357e+04 3.097e+02 1.056e+02
+s>                    ( - -2.671e+03 1 0)
+s>                    ( - -2.059e+04 6 0 QUESTION2 -1 2.306e+02 9.258e+01)))))INFO: dtree.c(1315): Comp split 2
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -4.829e+05 1.665e+02 2.208e+03
+|    ( - -4.818e+05 4 0)
+|    ( - -8.905e+02 1 0))
+s>    ( QUESTION0 -1 -4.829e+05 1.665e+02 2.208e+03
+s>        ( - -4.818e+05 4 0)
+s>        ( - -8.905e+02 1 0))INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_I 0 -1.630e+06 1.138e+04 7.265e+03
+|    ( - -3.760e+05 5 0 QUESTION0_2_R 1 2.340e+02 1.724e+03)
+|    ( QUESTION0_0_R 1 -1.243e+06 6.231e+03 5.541e+03
+|        ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+|        ( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+|            ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+|                ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+|                ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+|            ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+|                ( - -1.092e+05 2 0)
+|                ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+|                    ( - -1.800e+05 5 0)
+|                    ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+|                        ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|                        ( - -3.530e+05 37 0 QUESTION13 1 1.086e+03 1.602e+03)))))))
+s>    ( WDBNDRY_I 0 -1.630e+06 1.138e+04 7.265e+03
+s>        ( - -3.760e+05 5 0 QUESTION0_2_R 1 2.340e+02 1.724e+03)
+s>        ( QUESTION0_0_R 1 -1.243e+06 6.231e+03 5.541e+03
+s>            ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+s>            ( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+s>                ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+s>                    ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+s>                    ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+s>                ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+s>                    ( - -1.092e+05 2 0)
+s>                    ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+s>                        ( - -1.800e+05 5 0)
+s>                        ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+s>                            ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>                            ( - -3.530e+05 37 0 QUESTION13 1 1.086e+03 1.602e+03)))))))INFO: dtree.c(1315): Comp split 3
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_0_R 1 -1.243e+06 6.231e+03 5.541e+03
+|    ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+|    ( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+|        ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+|            ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+|            ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+|        ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+|            ( - -1.092e+05 2 0)
+|            ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+|                ( - -1.800e+05 5 0)
+|                ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+|                    ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|                    ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+|                        ( - -2.717e+05 29 0 WDBNDRY_B 0 8.248e+02 1.235e+03)
+|                        ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))))))
+s>    ( QUESTION0_0_R 1 -1.243e+06 6.231e+03 5.541e+03
+s>        ( - -2.953e+05 13 0 QUESTION0 -1 1.847e+02 1.320e+03)
+s>        ( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+s>            ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+s>                ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+s>                ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+s>            ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+s>                ( - -1.092e+05 2 0)
+s>                ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+s>                    ( - -1.800e+05 5 0)
+s>                    ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+s>                        ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>                        ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+s>                            ( - -2.717e+05 29 0 WDBNDRY_B 0 8.248e+02 1.235e+03)
+s>                            ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_2_R 1 -3.760e+05 2.340e+02 1.724e+03
+|    ( - -6.996e+02 1 0)
+|    ( QUESTION0_9_R 1 -3.750e+05 1.826e+02 1.720e+03
+|        ( - -1.413e+03 1 0)
+|        ( - -3.734e+05 3 0)))
+s>    ( QUESTION0_2_R 1 -3.760e+05 2.340e+02 1.724e+03
+s>        ( - -6.996e+02 1 0)
+s>        ( QUESTION0_9_R 1 -3.750e+05 1.826e+02 1.720e+03
+s>            ( - -1.413e+03 1 0)
+s>            ( - -3.734e+05 3 0)))INFO: dtree.c(1315): Comp split 4
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+|    ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+|        ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+|        ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+|    ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+|        ( - -1.092e+05 2 0)
+|        ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+|            ( - -1.800e+05 5 0)
+|            ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+|                ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|                ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+|                    ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+|                        ( - -6.841e+04 10 0 QUESTION0 -1 5.108e+02 3.177e+02)
+|                        ( - -2.024e+05 19 0 QUESTION0_20_R 1 4.635e+02 9.170e+02))
+|                    ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02))))))
+s>    ( QUESTION0_3_R 1 -9.415e+05 5.270e+03 4.221e+03
+s>        ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+s>            ( - -4.328e+04 3 0 QUESTION0 -1 2.175e+02 1.968e+02)
+s>            ( - -9.470e+04 3 0 QUESTION0 -1 4.402e+02 4.320e+02))
+s>        ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+s>            ( - -1.092e+05 2 0)
+s>            ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+s>                ( - -1.800e+05 5 0)
+s>                ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+s>                    ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>                    ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+s>                        ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+s>                            ( - -6.841e+04 10 0 QUESTION0 -1 5.108e+02 3.177e+02)
+s>                            ( - -2.024e+05 19 0 QUESTION0_20_R 1 4.635e+02 9.170e+02))
+s>                        ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02))))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -2.953e+05 1.847e+02 1.320e+03
+|    ( - -2.920e+05 11 0)
+|    ( - -3.086e+03 2 0))
+s>    ( QUESTION0 -1 -2.953e+05 1.847e+02 1.320e+03
+s>        ( - -2.920e+05 11 0)
+s>        ( - -3.086e+03 2 0))INFO: dtree.c(1315): Comp split 5
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -3.324e+05 8.909e+02 1.475e+03
+|    ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+|        ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+|        ( QUESTION1 -1 -2.411e+05 4.862e+02 1.075e+03
+|            ( QUESTION19 -1 -3.161e+04 2.450e+02 1.376e+02
+|                ( - -4.113e+03 2 0)
+|                ( QUESTION16 -1 -2.726e+04 1.911e+02 1.185e+02
+|                    ( - -1.380e+04 2 0 QUESTION17 -1 1.243e+02 6.052e+01)
+|                    ( - -1.326e+04 10 0 QUESTION2 -1 1.612e+02 5.802e+01)))
+|            ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+|                ( - -8.594e+03 2 0)
+|                ( - -2.002e+05 10 0))))
+|    ( QUESTION2_6_L -1 -5.111e+04 5.825e+02 2.250e+02
+|        ( - -3.228e+04 3 0 QUESTION2 -1 1.218e+02 1.434e+02)
+|        ( - -1.825e+04 5 0 WDBNDRY_E 0 1.262e+02 8.164e+01)))
+s>    ( WDBNDRY_B 0 -3.324e+05 8.909e+02 1.475e+03
+s>        ( QUESTION4 -1 -2.804e+05 6.851e+02 1.250e+03
+s>            ( - -3.858e+04 3 0 QUESTION11 -1 1.345e+02 1.753e+02)
+s>            ( QUESTION1 -1 -2.411e+05 4.862e+02 1.075e+03
+s>                ( QUESTION19 -1 -3.161e+04 2.450e+02 1.376e+02
+s>                    ( - -4.113e+03 2 0)
+s>                    ( QUESTION16 -1 -2.726e+04 1.911e+02 1.185e+02
+s>                        ( - -1.380e+04 2 0 QUESTION17 -1 1.243e+02 6.052e+01)
+s>                        ( - -1.326e+04 10 0 QUESTION2 -1 1.612e+02 5.802e+01)))
+s>                ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+s>                    ( - -8.594e+03 2 0)
+s>                    ( - -2.002e+05 10 0))))
+s>        ( QUESTION2_6_L -1 -5.111e+04 5.825e+02 2.250e+02
+s>            ( - -3.228e+04 3 0 QUESTION2 -1 1.218e+02 1.434e+02)
+s>            ( - -1.825e+04 5 0 WDBNDRY_E 0 1.262e+02 8.164e+01)))INFO: dtree.c(1315): Comp split 6
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+|    ( - -1.092e+05 2 0)
+|    ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+|        ( - -1.800e+05 5 0)
+|        ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+|            ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|            ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+|                ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+|                    ( QUESTION0 -1 -6.841e+04 5.108e+02 3.177e+02
+|                        ( - -5.953e+04 6 0 QUESTION2_0_L -1 1.435e+02 2.797e+02)
+|                        ( QUESTION13 -1 -8.369e+03 4.760e+02 3.803e+01
+|                            ( - 2.419e+02 1 0)
+|                            ( - -8.134e+03 3 0 QUESTION0_16_R 1 4.769e+02 3.703e+01)))
+|                    ( - -2.024e+05 19 0 QUESTION0_20_R 1 4.635e+02 9.170e+02))
+|                ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))))
+s>    ( QUESTION0_14_R 1 -7.967e+05 2.281e+03 3.592e+03
+s>        ( - -1.092e+05 2 0)
+s>        ( QUESTION0_17_R 1 -6.852e+05 2.391e+03 3.084e+03
+s>            ( - -1.800e+05 5 0)
+s>            ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+s>                ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>                ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+s>                    ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+s>                        ( QUESTION0 -1 -6.841e+04 5.108e+02 3.177e+02
+s>                            ( - -5.953e+04 6 0 QUESTION2_0_L -1 1.435e+02 2.797e+02)
+s>                            ( QUESTION13 -1 -8.369e+03 4.760e+02 3.803e+01
+s>                                ( - 2.419e+02 1 0)
+s>                                ( - -8.134e+03 3 0 QUESTION0_16_R 1 4.769e+02 3.703e+01)))
+s>                        ( - -2.024e+05 19 0 QUESTION0_20_R 1 4.635e+02 9.170e+02))
+s>                    ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+|    ( QUESTION0 -1 -4.328e+04 2.175e+02 1.968e+02
+|        ( - -4.198e+04 2 0)
+|        ( - -1.077e+03 1 0))
+|    ( QUESTION0 -1 -9.470e+04 4.402e+02 4.320e+02
+|        ( - -9.002e+04 2 0)
+|        ( - -4.238e+03 1 0)))
+s>    ( QUESTION11 1 -1.396e+05 1.620e+03 6.288e+02
+s>        ( QUESTION0 -1 -4.328e+04 2.175e+02 1.968e+02
+s>            ( - -4.198e+04 2 0)
+s>            ( - -1.077e+03 1 0))
+s>        ( QUESTION0 -1 -9.470e+04 4.402e+02 4.320e+02
+s>            ( - -9.002e+04 2 0)
+s>            ( - -4.238e+03 1 0)))INFO: dtree.c(1315): Comp split 7
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+|    ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|    ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+|        ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+|            ( QUESTION0 -1 -6.841e+04 5.108e+02 3.177e+02
+|                ( - -5.953e+04 6 0 QUESTION2_0_L -1 1.435e+02 2.797e+02)
+|                ( QUESTION13 -1 -8.369e+03 4.760e+02 3.803e+01
+|                    ( - 2.419e+02 1 0)
+|                    ( QUESTION0_16_R 1 -8.134e+03 4.769e+02 3.703e+01
+|                        ( - 2.408e+02 1 0)
+|                        ( - -7.898e+03 2 0 SILENCE -1 1.059e+02 3.603e+01))))
+|            ( QUESTION0_20_R 1 -2.024e+05 4.635e+02 9.170e+02
+|                ( - -2.685e+04 7 0 QUESTION0 -1 4.733e+02 1.220e+02)
+|                ( - -1.751e+05 12 0 QUESTION0 -1 3.470e+02 7.951e+02)))
+|        ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))
+s>    ( QUESTION4 1 -5.028e+05 1.531e+03 2.272e+03
+s>        ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>        ( QUESTION13 1 -3.530e+05 1.086e+03 1.602e+03
+s>            ( WDBNDRY_B 0 -2.717e+05 8.248e+02 1.235e+03
+s>                ( QUESTION0 -1 -6.841e+04 5.108e+02 3.177e+02
+s>                    ( - -5.953e+04 6 0 QUESTION2_0_L -1 1.435e+02 2.797e+02)
+s>                    ( QUESTION13 -1 -8.369e+03 4.760e+02 3.803e+01
+s>                        ( - 2.419e+02 1 0)
+s>                        ( QUESTION0_16_R 1 -8.134e+03 4.769e+02 3.703e+01
+s>                            ( - 2.408e+02 1 0)
+s>                            ( - -7.898e+03 2 0 SILENCE -1 1.059e+02 3.603e+01))))
+s>                ( QUESTION0_20_R 1 -2.024e+05 4.635e+02 9.170e+02
+s>                    ( - -2.685e+04 7 0 QUESTION0 -1 4.733e+02 1.220e+02)
+s>                    ( - -1.751e+05 12 0 QUESTION0 -1 3.470e+02 7.951e+02)))
+s>            ( - -8.028e+04 8 0 QUESTION0 -1 1.494e+02 3.676e+02)))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_9_R 1 -2.909e+05 1.659e+03 1.319e+03
+|    ( - -1.092e+05 2 0)
+|    ( - -1.800e+05 5 0))
+s>    ( QUESTION0_9_R 1 -2.909e+05 1.659e+03 1.319e+03
+s>        ( - -1.092e+05 2 0)
+s>        ( - -1.800e+05 5 0))INFO: dtree.c(1315): Comp split 8
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -1.065e+06 5.821e+02 4.687e+03
+|    ( QUESTION2_0_L -1 -9.941e+05 1.630e+02 4.377e+03
+|        ( - -9.936e+05 24 0)
+|        ( - -2.741e+02 1 0))
+|    ( WDBNDRY_B 0 -7.045e+04 3.113e+02 3.098e+02
+|        ( QUESTION11 -1 -2.785e+04 1.622e+02 1.207e+02
+|            ( - -9.511e+02 1 0)
+|            ( - -2.674e+04 22 0 SILENCE -1 1.235e+02 1.157e+02))
+|        ( QUESTION14 -1 -4.229e+04 4.484e+02 1.891e+02
+|            ( - -1.827e+04 9 0)
+|            ( QUESTION18 -1 -2.357e+04 3.097e+02 1.056e+02
+|                ( - -2.671e+03 1 0)
+|                ( QUESTION2 -1 -2.059e+04 2.306e+02 9.258e+01
+|                    ( - -7.052e+03 4 0 QUESTION2_14_L -1 1.539e+02 3.286e+01)
+|                    ( - -1.331e+04 2 0))))))
+s>    ( QUESTION0 -1 -1.065e+06 5.821e+02 4.687e+03
+s>        ( QUESTION2_0_L -1 -9.941e+05 1.630e+02 4.377e+03
+s>            ( - -9.936e+05 24 0)
+s>            ( - -2.741e+02 1 0))
+s>        ( WDBNDRY_B 0 -7.045e+04 3.113e+02 3.098e+02
+s>            ( QUESTION11 -1 -2.785e+04 1.622e+02 1.207e+02
+s>                ( - -9.511e+02 1 0)
+s>                ( - -2.674e+04 22 0 SILENCE -1 1.235e+02 1.157e+02))
+s>            ( QUESTION14 -1 -4.229e+04 4.484e+02 1.891e+02
+s>                ( - -1.827e+04 9 0)
+s>                ( QUESTION18 -1 -2.357e+04 3.097e+02 1.056e+02
+s>                    ( - -2.671e+03 1 0)
+s>                    ( QUESTION2 -1 -2.059e+04 2.306e+02 9.258e+01
+s>                        ( - -7.052e+03 4 0 QUESTION2_14_L -1 1.539e+02 3.286e+01)
+s>                        ( - -1.331e+04 2 0))))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2_0_L -1 -2.122e+05 2.785e+02 9.494e+02
+|    ( - -2.049e+05 20 0)
+|    ( QUESTION0 -1 -7.009e+03 1.961e+02 3.299e+01
+|        ( - -1.949e+03 1 0)
+|        ( - -4.864e+03 1 0)))
+s>    ( QUESTION2_0_L -1 -2.122e+05 2.785e+02 9.494e+02
+s>        ( - -2.049e+05 20 0)
+s>        ( QUESTION0 -1 -7.009e+03 1.961e+02 3.299e+01
+s>            ( - -1.949e+03 1 0)
+s>            ( - -4.864e+03 1 0)))INFO: dtree.c(1315): Comp split 9
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -1.491e+05 8.672e+02 6.833e+02
+|    ( QUESTION0 -1 -6.795e+04 5.265e+02 3.157e+02
+|        ( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+|            ( - -5.869e+04 5 0)
+|            ( - -6.926e+02 1 0))
+|        ( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+|            ( - -5.207e+03 1 0)
+|            ( - -2.585e+03 1 0)))
+|    ( QUESTION0 -1 -8.028e+04 1.494e+02 3.676e+02
+|        ( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+|            ( - -1.953e+03 1 0)
+|            ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+|                ( - -4.347e+04 3 0)
+|                ( - -3.295e+04 3 0)))
+|        ( - -1.543e+03 1 0)))
+s>    ( WDBNDRY_B 0 -1.491e+05 8.672e+02 6.833e+02
+s>        ( QUESTION0 -1 -6.795e+04 5.265e+02 3.157e+02
+s>            ( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+s>                ( - -5.869e+04 5 0)
+s>                ( - -6.926e+02 1 0))
+s>            ( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+s>                ( - -5.207e+03 1 0)
+s>                ( - -2.585e+03 1 0)))
+s>        ( QUESTION0 -1 -8.028e+04 1.494e+02 3.676e+02
+s>            ( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+s>                ( - -1.953e+03 1 0)
+s>                ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+s>                    ( - -4.347e+04 3 0)
+s>                    ( - -3.295e+04 3 0)))
+s>            ( - -1.543e+03 1 0)))INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 1 -3.520e+05 8.389e+02 1.589e+03
+|    ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+|    ( QUESTION15 -1 -2.029e+05 4.708e+02 9.190e+02
+|        ( - 2.419e+02 1 0)
+|        ( WDBNDRY_B 0 -2.027e+05 4.657e+02 9.180e+02
+|            ( - 2.408e+02 1 0)
+|            ( QUESTION0_20_R 1 -2.024e+05 4.635e+02 9.170e+02
+|                ( QUESTION0 -1 -2.685e+04 4.733e+02 1.220e+02
+|                    ( - -2.662e+04 6 0 QUESTION17 1 2.612e+02 1.210e+02)
+|                    ( - 2.421e+02 1 0))
+|                ( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+|                    ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+|                        ( - -1.042e+05 5 0)
+|                        ( - -6.618e+04 5 0 QUESTION0_9_R 1 1.961e+02 3.030e+02))
+|                    ( - -4.103e+03 2 0 QUESTION19 1 1.543e+02 1.901e+01))))))
+s>    ( QUESTION2 1 -3.520e+05 8.389e+02 1.589e+03
+s>        ( - -1.482e+05 6 0 QUESTION0_7_R 1 1.788e+02 6.702e+02)
+s>        ( QUESTION15 -1 -2.029e+05 4.708e+02 9.190e+02
+s>            ( - 2.419e+02 1 0)
+s>            ( WDBNDRY_B 0 -2.027e+05 4.657e+02 9.180e+02
+s>                ( - 2.408e+02 1 0)
+s>                ( QUESTION0_20_R 1 -2.024e+05 4.635e+02 9.170e+02
+s>                    ( QUESTION0 -1 -2.685e+04 4.733e+02 1.220e+02
+s>                        ( - -2.662e+04 6 0 QUESTION17 1 2.612e+02 1.210e+02)
+s>                        ( - 2.421e+02 1 0))
+s>                    ( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+s>                        ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+s>                            ( - -1.042e+05 5 0)
+s>                            ( - -6.618e+04 5 0 QUESTION0_9_R 1 1.961e+02 3.030e+02))
+s>                        ( - -4.103e+03 2 0 QUESTION19 1 1.543e+02 1.901e+01))))))INFO: dtree.c(1315): Comp split 10
+INFO: dtree.c(1315): Comp split 11
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -9.596e+04 4.615e+02 4.380e+02
+|    ( - -9.002e+04 2 0)
+|    ( QUESTION11 1 -5.478e+03 1.629e+02 2.600e+01
+|        ( - -1.077e+03 1 0)
+|        ( - -4.238e+03 1 0)))
+s>    ( QUESTION0 -1 -9.596e+04 4.615e+02 4.380e+02
+s>        ( - -9.002e+04 2 0)
+s>        ( QUESTION11 1 -5.478e+03 1.629e+02 2.600e+01
+s>            ( - -1.077e+03 1 0)
+s>            ( - -4.238e+03 1 0)))INFO: dtree.c(1315): Comp split 12
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_E 0 -7.871e+04 5.417e+02 3.435e+02
+|    ( - -1.708e+04 3 0)
+|    ( QUESTION4 -1 -6.108e+04 3.658e+02 2.669e+02
+|        ( - -3.182e+04 2 0)
+|        ( QUESTION16 -1 -2.890e+04 2.053e+02 1.255e+02
+|            ( QUESTION17 -1 -1.427e+04 1.233e+02 6.252e+01
+|                ( - -1.541e+03 1 0)
+|                ( - -1.260e+04 2 0 WDBNDRY_B 0 1.222e+02 5.552e+01))
+|            ( QUESTION2 -1 -1.442e+04 1.557e+02 6.302e+01
+|                ( - -2.572e+03 2 0)
+|                ( WDBNDRY_B 0 -1.170e+04 1.319e+02 5.101e+01
+|                    ( QUESTION14 -1 -1.053e+04 1.242e+02 4.601e+01
+|                        ( - -5.417e+03 4 0)
+|                        ( - -4.987e+03 4 0))
+|                    ( - -1.036e+03 2 0))))))
+s>    ( WDBNDRY_E 0 -7.871e+04 5.417e+02 3.435e+02
+s>        ( - -1.708e+04 3 0)
+s>        ( QUESTION4 -1 -6.108e+04 3.658e+02 2.669e+02
+s>            ( - -3.182e+04 2 0)
+s>            ( QUESTION16 -1 -2.890e+04 2.053e+02 1.255e+02
+s>                ( QUESTION17 -1 -1.427e+04 1.233e+02 6.252e+01
+s>                    ( - -1.541e+03 1 0)
+s>                    ( - -1.260e+04 2 0 WDBNDRY_B 0 1.222e+02 5.552e+01))
+s>                ( QUESTION2 -1 -1.442e+04 1.557e+02 6.302e+01
+s>                    ( - -2.572e+03 2 0)
+s>                    ( WDBNDRY_B 0 -1.170e+04 1.319e+02 5.101e+01
+s>                        ( QUESTION14 -1 -1.053e+04 1.242e+02 4.601e+01
+s>                            ( - -5.417e+03 4 0)
+s>                            ( - -4.987e+03 4 0))
+s>                        ( - -1.036e+03 2 0))))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION1 -1 -2.526e+05 7.570e+02 1.132e+03
+|    ( QUESTION11 -1 -4.285e+04 2.230e+02 1.943e+02
+|        ( - -3.672e+04 2 0)
+|        ( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+|            ( - -1.727e+03 1 0)
+|            ( - -4.113e+03 2 0)))
+|    ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+|        ( - -8.594e+03 2 0)
+|        ( - -2.002e+05 10 0)))
+s>    ( QUESTION1 -1 -2.526e+05 7.570e+02 1.132e+03
+s>        ( QUESTION11 -1 -4.285e+04 2.230e+02 1.943e+02
+s>            ( - -3.672e+04 2 0)
+s>            ( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+s>                ( - -1.727e+03 1 0)
+s>                ( - -4.113e+03 2 0)))
+s>        ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+s>            ( - -8.594e+03 2 0)
+s>            ( - -2.002e+05 10 0)))INFO: dtree.c(1315): Comp split 13
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_20_R 1 -1.754e+05 4.691e+02 7.961e+02
+|    ( - 2.421e+02 1 0)
+|    ( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+|        ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+|            ( - -1.042e+05 5 0)
+|            ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+|                ( - -3.330e+04 2 0)
+|                ( - -3.269e+04 3 0)))
+|        ( QUESTION19 1 -4.103e+03 1.543e+02 1.901e+01
+|            ( - -1.228e+03 1 0)
+|            ( - -2.720e+03 1 0))))
+s>    ( QUESTION0_20_R 1 -1.754e+05 4.691e+02 7.961e+02
+s>        ( - 2.421e+02 1 0)
+s>        ( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+s>            ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+s>                ( - -1.042e+05 5 0)
+s>                ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+s>                    ( - -3.330e+04 2 0)
+s>                    ( - -3.269e+04 3 0)))
+s>            ( QUESTION19 1 -4.103e+03 1.543e+02 1.901e+01
+s>                ( - -1.228e+03 1 0)
+s>                ( - -2.720e+03 1 0))))INFO: dtree.c(1478): Final simple tree
+|( QUESTION15 -1 -1.757e+05 4.698e+02 7.931e+02
+|    ( - 2.419e+02 1 0)
+|    ( WDBNDRY_B 0 -1.755e+05 4.640e+02 7.921e+02
+|        ( - 2.408e+02 1 0)
+|        ( QUESTION0_15_R 1 -1.753e+05 4.398e+02 7.911e+02
+|            ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|                ( - -1.316e+04 4 0)
+|                ( - -1.320e+04 2 0))
+|            ( QUESTION0_7_R 1 -1.482e+05 1.788e+02 6.702e+02
+|                ( QUESTION0 -1 -1.380e+03 4.896e+02 7.000e+00
+|                    ( - -1.133e+03 1 0)
+|                    ( - 2.424e+02 1 0))
+|                ( QUESTION0 -1 -1.467e+05 4.646e+02 6.632e+02
+|                    ( - -1.464e+05 3 0 QUESTION0_5_R 1 1.394e+02 6.622e+02)
+|                    ( - 2.169e+02 1 0))))))
+s>    ( QUESTION15 -1 -1.757e+05 4.698e+02 7.931e+02
+s>        ( - 2.419e+02 1 0)
+s>        ( WDBNDRY_B 0 -1.755e+05 4.640e+02 7.921e+02
+s>            ( - 2.408e+02 1 0)
+s>            ( QUESTION0_15_R 1 -1.753e+05 4.398e+02 7.911e+02
+s>                ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>                    ( - -1.316e+04 4 0)
+s>                    ( - -1.320e+04 2 0))
+s>                ( QUESTION0_7_R 1 -1.482e+05 1.788e+02 6.702e+02
+s>                    ( QUESTION0 -1 -1.380e+03 4.896e+02 7.000e+00
+s>                        ( - -1.133e+03 1 0)
+s>                        ( - 2.424e+02 1 0))
+s>                    ( QUESTION0 -1 -1.467e+05 4.646e+02 6.632e+02
+s>                        ( - -1.464e+05 3 0 QUESTION0_5_R 1 1.394e+02 6.622e+02)
+s>                        ( - 2.169e+02 1 0))))))INFO: dtree.c(1315): Comp split 14
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -8.028e+04 1.494e+02 3.676e+02
+|    ( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+|        ( - -1.953e+03 1 0)
+|        ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+|            ( - -4.347e+04 3 0)
+|            ( - -3.295e+04 3 0)))
+|    ( - -1.543e+03 1 0))
+s>    ( QUESTION0 -1 -8.028e+04 1.494e+02 3.676e+02
+s>        ( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+s>            ( - -1.953e+03 1 0)
+s>            ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+s>                ( - -4.347e+04 3 0)
+s>                ( - -3.295e+04 3 0)))
+s>        ( - -1.543e+03 1 0))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -6.795e+04 5.265e+02 3.157e+02
+|    ( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+|        ( - -5.869e+04 5 0)
+|        ( - -6.926e+02 1 0))
+|    ( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+|        ( - -5.207e+03 1 0)
+|        ( - -2.585e+03 1 0)))
+s>    ( QUESTION0 -1 -6.795e+04 5.265e+02 3.157e+02
+s>        ( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+s>            ( - -5.869e+04 5 0)
+s>            ( - -6.926e+02 1 0))
+s>        ( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+s>            ( - -5.207e+03 1 0)
+s>            ( - -2.585e+03 1 0)))INFO: dtree.c(1315): Comp split 15
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION11 -1 -4.285e+04 2.230e+02 1.943e+02
+|    ( - -3.672e+04 2 0)
+|    ( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+|        ( - -1.727e+03 1 0)
+|        ( - -4.113e+03 2 0)))
+s>    ( QUESTION11 -1 -4.285e+04 2.230e+02 1.943e+02
+s>        ( - -3.672e+04 2 0)
+s>        ( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+s>            ( - -1.727e+03 1 0)
+s>            ( - -4.113e+03 2 0)))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+|    ( - -8.594e+03 2 0)
+|    ( - -2.002e+05 10 0))
+s>    ( SILENCE -1 -2.090e+05 2.069e+02 9.374e+02
+s>        ( - -8.594e+03 2 0)
+s>        ( - -2.002e+05 10 0))INFO: dtree.c(1315): Comp split 16
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -1.934e+04 1.252e+02 8.848e+01
+|    ( - -9.511e+02 1 0)
+|    ( - -1.827e+04 9 0))
+s>    ( WDBNDRY_B 0 -1.934e+04 1.252e+02 8.848e+01
+s>        ( - -9.511e+02 1 0)
+s>        ( - -1.827e+04 9 0))INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -1.045e+06 4.777e+02 4.598e+03
+|    ( QUESTION2_0_L -1 -9.941e+05 1.630e+02 4.377e+03
+|        ( - -9.936e+05 24 0)
+|        ( - -2.741e+02 1 0))
+|    ( QUESTION10 -1 -5.056e+04 2.721e+02 2.213e+02
+|        ( QUESTION2_14_L -1 -7.727e+03 1.543e+02 3.586e+01
+|            ( - -7.536e+02 1 0)
+|            ( - -6.819e+03 5 0 WDBNDRY_B 0 1.123e+02 3.186e+01))
+|        ( WDBNDRY_B 0 -4.256e+04 2.618e+02 1.855e+02
+|            ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+|                ( - -6.044e+03 3 0)
+|                ( - -1.988e+04 17 0 QUESTION18 -1 1.135e+02 8.654e+01))
+|            ( QUESTION16 -1 -1.625e+04 2.672e+02 7.277e+01
+|                ( - -1.331e+04 2 0)
+|                ( - -2.671e+03 1 0)))))
+s>    ( QUESTION0 -1 -1.045e+06 4.777e+02 4.598e+03
+s>        ( QUESTION2_0_L -1 -9.941e+05 1.630e+02 4.377e+03
+s>            ( - -9.936e+05 24 0)
+s>            ( - -2.741e+02 1 0))
+s>        ( QUESTION10 -1 -5.056e+04 2.721e+02 2.213e+02
+s>            ( QUESTION2_14_L -1 -7.727e+03 1.543e+02 3.586e+01
+s>                ( - -7.536e+02 1 0)
+s>                ( - -6.819e+03 5 0 WDBNDRY_B 0 1.123e+02 3.186e+01))
+s>            ( WDBNDRY_B 0 -4.256e+04 2.618e+02 1.855e+02
+s>                ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+s>                    ( - -6.044e+03 3 0)
+s>                    ( - -1.988e+04 17 0 QUESTION18 -1 1.135e+02 8.654e+01))
+s>                ( QUESTION16 -1 -1.625e+04 2.672e+02 7.277e+01
+s>                    ( - -1.331e+04 2 0)
+s>                    ( - -2.671e+03 1 0)))))INFO: dtree.c(1315): Comp split 17
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -4.747e+04 3.087e+02 2.089e+02
+|    ( QUESTION2 -1 -1.488e+04 1.645e+02 6.552e+01
+|        ( - -2.572e+03 2 0)
+|        ( - -1.214e+04 1 0))
+|    ( QUESTION2 -1 -3.228e+04 1.218e+02 1.434e+02
+|        ( - -3.182e+04 2 0)
+|        ( - -3.405e+02 1 0)))
+s>    ( WDBNDRY_B 0 -4.747e+04 3.087e+02 2.089e+02
+s>        ( QUESTION2 -1 -1.488e+04 1.645e+02 6.552e+01
+s>            ( - -2.572e+03 2 0)
+s>            ( - -1.214e+04 1 0))
+s>        ( QUESTION2 -1 -3.228e+04 1.218e+02 1.434e+02
+s>            ( - -3.182e+04 2 0)
+s>            ( - -3.405e+02 1 0)))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -3.065e+04 2.294e+02 1.347e+02
+|    ( QUESTION14 -1 -1.217e+04 1.363e+02 5.301e+01
+|        ( - -5.417e+03 4 0)
+|        ( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+|            ( - -1.541e+03 1 0)
+|            ( - -4.987e+03 4 0)))
+|    ( WDBNDRY_E 0 -1.825e+04 1.262e+02 8.164e+01
+|        ( - -1.708e+04 3 0)
+|        ( - -1.036e+03 2 0)))
+s>    ( WDBNDRY_B 0 -3.065e+04 2.294e+02 1.347e+02
+s>        ( QUESTION14 -1 -1.217e+04 1.363e+02 5.301e+01
+s>            ( - -5.417e+03 4 0)
+s>            ( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+s>                ( - -1.541e+03 1 0)
+s>                ( - -4.987e+03 4 0)))
+s>        ( WDBNDRY_E 0 -1.825e+04 1.262e+02 8.164e+01
+s>            ( - -1.708e+04 3 0)
+s>            ( - -1.036e+03 2 0)))INFO: dtree.c(1315): Comp split 18
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+|    ( - -5.207e+03 1 0)
+|    ( - -2.585e+03 1 0))
+s>    ( SILENCE -1 -7.898e+03 1.059e+02 3.603e+01
+s>        ( - -5.207e+03 1 0)
+s>        ( - -2.585e+03 1 0))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+|    ( - -5.869e+04 5 0)
+|    ( - -6.926e+02 1 0))
+s>    ( QUESTION2_0_L -1 -5.953e+04 1.435e+02 2.797e+02
+s>        ( - -5.869e+04 5 0)
+s>        ( - -6.926e+02 1 0))INFO: dtree.c(1315): Comp split 19
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -9.945e+05 1.365e+02 4.379e+03
+|    ( - -9.936e+05 24 0)
+|    ( - -7.536e+02 1 0))
+s>    ( QUESTION0 -1 -9.945e+05 1.365e+02 4.379e+03
+s>        ( - -9.936e+05 24 0)
+s>        ( - -7.536e+02 1 0))INFO: dtree.c(1478): Final simple tree
+|( QUESTION10 -1 -5.010e+04 2.753e+02 2.193e+02
+|    ( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+|        ( - -5.620e+02 2 0)
+|        ( - -6.145e+03 3 0))
+|    ( QUESTION19 -1 -4.300e+04 2.545e+02 1.875e+02
+|        ( - -2.671e+03 1 0)
+|        ( WDBNDRY_B 0 -4.007e+04 2.650e+02 1.744e+02
+|            ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+|                ( - -6.044e+03 3 0)
+|                ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+|                    ( - -2.382e+03 2 0)
+|                    ( - -1.739e+04 15 0 QUESTION4 -1 1.012e+02 7.554e+01)))
+|            ( QUESTION0 -1 -1.376e+04 1.730e+02 6.172e+01
+|                ( - -2.741e+02 1 0)
+|                ( - -1.331e+04 2 0)))))
+s>    ( QUESTION10 -1 -5.010e+04 2.753e+02 2.193e+02
+s>        ( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+s>            ( - -5.620e+02 2 0)
+s>            ( - -6.145e+03 3 0))
+s>        ( QUESTION19 -1 -4.300e+04 2.545e+02 1.875e+02
+s>            ( - -2.671e+03 1 0)
+s>            ( WDBNDRY_B 0 -4.007e+04 2.650e+02 1.744e+02
+s>                ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+s>                    ( - -6.044e+03 3 0)
+s>                    ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+s>                        ( - -2.382e+03 2 0)
+s>                        ( - -1.739e+04 15 0 QUESTION4 -1 1.012e+02 7.554e+01)))
+s>                ( QUESTION0 -1 -1.376e+04 1.730e+02 6.172e+01
+s>                    ( - -2.741e+02 1 0)
+s>                    ( - -1.331e+04 2 0)))))INFO: dtree.c(1315): Comp split 20
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION15 -1 -1.755e+05 4.698e+02 7.921e+02
+|    ( - 2.419e+02 1 0)
+|    ( QUESTION1 -1 -1.753e+05 4.640e+02 7.911e+02
+|        ( - 2.169e+02 1 0)
+|        ( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+|            ( - 2.408e+02 1 0)
+|            ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+|                ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|                    ( - -1.316e+04 4 0)
+|                    ( - -1.320e+04 2 0))
+|                ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+|                    ( - -1.133e+03 1 0)
+|                    ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|                        ( - -1.692e+03 1 0)
+|                        ( - -1.446e+05 2 0 QUESTION0_2_R 1 7.756e+01 6.542e+02)))))))
+s>    ( QUESTION15 -1 -1.755e+05 4.698e+02 7.921e+02
+s>        ( - 2.419e+02 1 0)
+s>        ( QUESTION1 -1 -1.753e+05 4.640e+02 7.911e+02
+s>            ( - 2.169e+02 1 0)
+s>            ( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+s>                ( - 2.408e+02 1 0)
+s>                ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+s>                    ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>                        ( - -1.316e+04 4 0)
+s>                        ( - -1.320e+04 2 0))
+s>                    ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+s>                        ( - -1.133e+03 1 0)
+s>                        ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>                            ( - -1.692e+03 1 0)
+s>                            ( - -1.446e+05 2 0 QUESTION0_2_R 1 7.756e+01 6.542e+02)))))))INFO: dtree.c(1315): Comp split 21
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION1 -1 -1.753e+05 4.640e+02 7.911e+02
+|    ( - 2.169e+02 1 0)
+|    ( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+|        ( - 2.408e+02 1 0)
+|        ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+|            ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|                ( - -1.316e+04 4 0)
+|                ( - -1.320e+04 2 0))
+|            ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+|                ( - -1.133e+03 1 0)
+|                ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|                    ( - -1.692e+03 1 0)
+|                    ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|                        ( - -1.426e+05 1 0)
+|                        ( - -1.911e+03 1 0)))))))
+s>    ( QUESTION1 -1 -1.753e+05 4.640e+02 7.911e+02
+s>        ( - 2.169e+02 1 0)
+s>        ( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+s>            ( - 2.408e+02 1 0)
+s>            ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+s>                ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>                    ( - -1.316e+04 4 0)
+s>                    ( - -1.320e+04 2 0))
+s>                ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+s>                    ( - -1.133e+03 1 0)
+s>                    ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>                        ( - -1.692e+03 1 0)
+s>                        ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>                            ( - -1.426e+05 1 0)
+s>                            ( - -1.911e+03 1 0)))))))INFO: dtree.c(1315): Comp split 22
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+|    ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+|        ( - -1.042e+05 5 0)
+|        ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+|            ( - -3.330e+04 2 0)
+|            ( - -3.269e+04 3 0)))
+|    ( QUESTION19 1 -4.103e+03 1.543e+02 1.901e+01
+|        ( - -1.228e+03 1 0)
+|        ( - -2.720e+03 1 0)))
+s>    ( QUESTION0 -1 -1.751e+05 3.470e+02 7.951e+02
+s>        ( QUESTION19 1 -1.707e+05 2.995e+02 7.761e+02
+s>            ( - -1.042e+05 5 0)
+s>            ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+s>                ( - -3.330e+04 2 0)
+s>                ( - -3.269e+04 3 0)))
+s>        ( QUESTION19 1 -4.103e+03 1.543e+02 1.901e+01
+s>            ( - -1.228e+03 1 0)
+s>            ( - -2.720e+03 1 0)))INFO: dtree.c(1315): Comp split 23
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+|    ( - 2.408e+02 1 0)
+|    ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+|        ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|            ( - -1.316e+04 4 0)
+|            ( - -1.320e+04 2 0))
+|        ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+|            ( - -1.133e+03 1 0)
+|            ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|                ( - -1.692e+03 1 0)
+|                ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|                    ( - -1.426e+05 1 0)
+|                    ( - -1.911e+03 1 0))))))
+s>    ( WDBNDRY_B 0 -1.750e+05 4.640e+02 7.901e+02
+s>        ( - 2.408e+02 1 0)
+s>        ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+s>            ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>                ( - -1.316e+04 4 0)
+s>                ( - -1.320e+04 2 0))
+s>            ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+s>                ( - -1.133e+03 1 0)
+s>                ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>                    ( - -1.692e+03 1 0)
+s>                    ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>                        ( - -1.426e+05 1 0)
+s>                        ( - -1.911e+03 1 0))))))INFO: dtree.c(1315): Comp split 24
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+|    ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|        ( - -1.316e+04 4 0)
+|        ( - -1.320e+04 2 0))
+|    ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+|        ( - -1.133e+03 1 0)
+|        ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|            ( - -1.692e+03 1 0)
+|            ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|                ( - -1.426e+05 1 0)
+|                ( - -1.911e+03 1 0)))))
+s>    ( QUESTION0_15_R 1 -1.748e+05 4.402e+02 7.891e+02
+s>        ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>            ( - -1.316e+04 4 0)
+s>            ( - -1.320e+04 2 0))
+s>        ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+s>            ( - -1.133e+03 1 0)
+s>            ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>                ( - -1.692e+03 1 0)
+s>                ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>                    ( - -1.426e+05 1 0)
+s>                    ( - -1.911e+03 1 0)))))INFO: dtree.c(1315): Comp split 25
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION11 1 -5.478e+03 1.629e+02 2.600e+01
+|    ( - -1.077e+03 1 0)
+|    ( - -4.238e+03 1 0))
+s>    ( QUESTION11 1 -5.478e+03 1.629e+02 2.600e+01
+s>        ( - -1.077e+03 1 0)
+s>        ( - -4.238e+03 1 0))INFO: dtree.c(1315): Comp split 26
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+|    ( - -1.133e+03 1 0)
+|    ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|        ( - -1.692e+03 1 0)
+|        ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|            ( - -1.426e+05 1 0)
+|            ( - -1.911e+03 1 0))))
+s>    ( QUESTION0_7_R 1 -1.477e+05 1.963e+02 6.682e+02
+s>        ( - -1.133e+03 1 0)
+s>        ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>            ( - -1.692e+03 1 0)
+s>            ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>                ( - -1.426e+05 1 0)
+s>                ( - -1.911e+03 1 0))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+|    ( - -1.316e+04 4 0)
+|    ( - -1.320e+04 2 0))
+s>    ( QUESTION17 1 -2.662e+04 2.612e+02 1.210e+02
+s>        ( - -1.316e+04 4 0)
+s>        ( - -1.320e+04 2 0))INFO: dtree.c(1315): Comp split 27
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION19 1 -1.720e+05 2.971e+02 7.821e+02
+|    ( QUESTION0 -1 -1.055e+05 1.130e+02 4.790e+02
+|        ( - -1.042e+05 5 0)
+|        ( - -1.228e+03 1 0))
+|    ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+|        ( - -3.330e+04 2 0)
+|        ( - -3.269e+04 3 0)))
+s>    ( QUESTION19 1 -1.720e+05 2.971e+02 7.821e+02
+s>        ( QUESTION0 -1 -1.055e+05 1.130e+02 4.790e+02
+s>            ( - -1.042e+05 5 0)
+s>            ( - -1.228e+03 1 0))
+s>        ( QUESTION0_9_R 1 -6.618e+04 1.961e+02 3.030e+02
+s>            ( - -3.330e+04 2 0)
+s>            ( - -3.269e+04 3 0)))INFO: dtree.c(1315): Comp split 28
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 -1 -2.035e+04 2.182e+02 9.158e+01
+|    ( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+|        ( - -5.620e+02 2 0)
+|        ( - -6.145e+03 3 0))
+|    ( - -1.331e+04 2 0))
+s>    ( QUESTION2 -1 -2.035e+04 2.182e+02 9.158e+01
+s>        ( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+s>            ( - -5.620e+02 2 0)
+s>            ( - -6.145e+03 3 0))
+s>        ( - -1.331e+04 2 0))INFO: dtree.c(1478): Final simple tree
+|( QUESTION19 -1 -2.941e+04 2.525e+02 1.277e+02
+|    ( - -2.671e+03 1 0)
+|    ( WDBNDRY_B 0 -2.649e+04 1.620e+02 1.147e+02
+|        ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+|            ( - -6.044e+03 3 0)
+|            ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+|                ( - -2.382e+03 2 0)
+|                ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+|                    ( - -1.189e+03 2 0)
+|                    ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+|                        ( - -1.267e+03 2 0)
+|                        ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|                            ( - -3.439e+03 4 0)
+|                            ( - -1.121e+04 7 0))))))
+|        ( - -2.741e+02 1 0)))
+s>    ( QUESTION19 -1 -2.941e+04 2.525e+02 1.277e+02
+s>        ( - -2.671e+03 1 0)
+s>        ( WDBNDRY_B 0 -2.649e+04 1.620e+02 1.147e+02
+s>            ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+s>                ( - -6.044e+03 3 0)
+s>                ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+s>                    ( - -2.382e+03 2 0)
+s>                    ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+s>                        ( - -1.189e+03 2 0)
+s>                        ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+s>                            ( - -1.267e+03 2 0)
+s>                            ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>                                ( - -3.439e+03 4 0)
+s>                                ( - -1.121e+04 7 0))))))
+s>            ( - -2.741e+02 1 0)))INFO: dtree.c(1315): Comp split 29
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 -1 -1.488e+04 1.645e+02 6.552e+01
+|    ( - -2.572e+03 2 0)
+|    ( - -1.214e+04 1 0))
+s>    ( QUESTION2 -1 -1.488e+04 1.645e+02 6.552e+01
+s>        ( - -2.572e+03 2 0)
+s>        ( - -1.214e+04 1 0))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 -1 -3.228e+04 1.218e+02 1.434e+02
+|    ( - -3.182e+04 2 0)
+|    ( - -3.405e+02 1 0))
+s>    ( QUESTION2 -1 -3.228e+04 1.218e+02 1.434e+02
+s>        ( - -3.182e+04 2 0)
+s>        ( - -3.405e+02 1 0))INFO: dtree.c(1315): Comp split 30
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION20 1 -6.752e+04 1.948e+02 3.090e+02
+|    ( - -3.330e+04 2 0)
+|    ( QUESTION0_9_R 1 -3.403e+04 1.138e+02 1.567e+02
+|        ( - -1.228e+03 1 0)
+|        ( - -3.269e+04 3 0)))
+s>    ( QUESTION20 1 -6.752e+04 1.948e+02 3.090e+02
+s>        ( - -3.330e+04 2 0)
+s>        ( QUESTION0_9_R 1 -3.403e+04 1.138e+02 1.567e+02
+s>            ( - -1.228e+03 1 0)
+s>            ( - -3.269e+04 3 0)))INFO: dtree.c(1315): Comp split 31
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0 -1 -7.009e+03 1.961e+02 3.299e+01
+|    ( - -1.949e+03 1 0)
+|    ( - -4.864e+03 1 0))
+s>    ( QUESTION0 -1 -7.009e+03 1.961e+02 3.299e+01
+s>        ( - -1.949e+03 1 0)
+s>        ( - -4.864e+03 1 0))INFO: dtree.c(1315): Comp split 32
+INFO: dtree.c(1315): Comp split 33
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -2.649e+04 1.620e+02 1.147e+02
+|    ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+|        ( - -6.044e+03 3 0)
+|        ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+|            ( - -2.382e+03 2 0)
+|            ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+|                ( - -1.189e+03 2 0)
+|                ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+|                    ( - -1.267e+03 2 0)
+|                    ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|                        ( - -3.439e+03 4 0)
+|                        ( - -1.121e+04 7 0))))))
+|    ( - -2.741e+02 1 0))
+s>    ( WDBNDRY_B 0 -2.649e+04 1.620e+02 1.147e+02
+s>        ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+s>            ( - -6.044e+03 3 0)
+s>            ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+s>                ( - -2.382e+03 2 0)
+s>                ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+s>                    ( - -1.189e+03 2 0)
+s>                    ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+s>                        ( - -1.267e+03 2 0)
+s>                        ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>                            ( - -3.439e+03 4 0)
+s>                            ( - -1.121e+04 7 0))))))
+s>        ( - -2.741e+02 1 0))INFO: dtree.c(1315): Comp split 34
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_9_R 1 -3.750e+05 1.826e+02 1.720e+03
+|    ( - -1.413e+03 1 0)
+|    ( - -3.734e+05 3 0))
+s>    ( QUESTION0_9_R 1 -3.750e+05 1.826e+02 1.720e+03
+s>        ( - -1.413e+03 1 0)
+s>        ( - -3.734e+05 3 0))INFO: dtree.c(1315): Comp split 35
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION14 -1 -1.217e+04 1.363e+02 5.301e+01
+|    ( - -5.417e+03 4 0)
+|    ( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+|        ( - -1.541e+03 1 0)
+|        ( - -4.987e+03 4 0)))
+s>    ( QUESTION14 -1 -1.217e+04 1.363e+02 5.301e+01
+s>        ( - -5.417e+03 4 0)
+s>        ( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+s>            ( - -1.541e+03 1 0)
+s>            ( - -4.987e+03 4 0)))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_E 0 -1.825e+04 1.262e+02 8.164e+01
+|    ( - -1.708e+04 3 0)
+|    ( - -1.036e+03 2 0))
+s>    ( WDBNDRY_E 0 -1.825e+04 1.262e+02 8.164e+01
+s>        ( - -1.708e+04 3 0)
+s>        ( - -1.036e+03 2 0))INFO: dtree.c(1315): Comp split 36
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+|    ( - -1.727e+03 1 0)
+|    ( - -4.113e+03 2 0))
+s>    ( QUESTION2 -1 -5.912e+03 7.258e+01 2.702e+01
+s>        ( - -1.727e+03 1 0)
+s>        ( - -4.113e+03 2 0))INFO: dtree.c(1315): Comp split 37
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+|    ( - -5.620e+02 2 0)
+|    ( - -6.145e+03 3 0))
+s>    ( WDBNDRY_B 0 -6.819e+03 1.123e+02 3.186e+01
+s>        ( - -5.620e+02 2 0)
+s>        ( - -6.145e+03 3 0))INFO: dtree.c(1315): Comp split 38
+INFO: dtree.c(1315): Comp split 39
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+|    ( - -1.692e+03 1 0)
+|    ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|        ( - -1.426e+05 1 0)
+|        ( - -1.911e+03 1 0)))
+s>    ( QUESTION0_5_R 1 -1.464e+05 1.394e+02 6.622e+02
+s>        ( - -1.692e+03 1 0)
+s>        ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>            ( - -1.426e+05 1 0)
+s>            ( - -1.911e+03 1 0)))INFO: dtree.c(1315): Comp split 40
+INFO: dtree.c(1315): Comp split 41
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_9_R 1 -3.403e+04 1.138e+02 1.567e+02
+|    ( - -1.228e+03 1 0)
+|    ( - -3.269e+04 3 0))
+s>    ( QUESTION0_9_R 1 -3.403e+04 1.138e+02 1.567e+02
+s>        ( - -1.228e+03 1 0)
+s>        ( - -3.269e+04 3 0))INFO: dtree.c(1315): Comp split 42
+INFO: dtree.c(1315): Comp split 43
+INFO: dtree.c(1315): Comp split 44
+INFO: dtree.c(1315): Comp split 45
+INFO: dtree.c(1315): Comp split 46
+INFO: dtree.c(1315): Comp split 47
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+|    ( - -6.044e+03 3 0)
+|    ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+|        ( - -2.382e+03 2 0)
+|        ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+|            ( - -1.189e+03 2 0)
+|            ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+|                ( - -1.267e+03 2 0)
+|                ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|                    ( - -3.439e+03 4 0)
+|                    ( - -1.121e+04 7 0))))))
+s>    ( SILENCE -1 -2.605e+04 1.262e+02 1.127e+02
+s>        ( - -6.044e+03 3 0)
+s>        ( QUESTION18 -1 -1.988e+04 1.135e+02 8.654e+01
+s>            ( - -2.382e+03 2 0)
+s>            ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+s>                ( - -1.189e+03 2 0)
+s>                ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+s>                    ( - -1.267e+03 2 0)
+s>                    ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>                        ( - -3.439e+03 4 0)
+s>                        ( - -1.121e+04 7 0))))))INFO: dtree.c(1315): Comp split 48
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+|    ( - -1.953e+03 1 0)
+|    ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+|        ( - -4.347e+04 3 0)
+|        ( - -3.295e+04 3 0)))
+s>    ( QUESTION0_15_R 1 -7.859e+04 1.142e+02 3.598e+02
+s>        ( - -1.953e+03 1 0)
+s>        ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+s>            ( - -4.347e+04 3 0)
+s>            ( - -3.295e+04 3 0)))INFO: dtree.c(1315): Comp split 49
+INFO: dtree.c(1315): Comp split 50
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+|    ( - -1.189e+03 2 0)
+|    ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+|        ( - -1.267e+03 2 0)
+|        ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|            ( - -3.439e+03 4 0)
+|            ( - -1.121e+04 7 0))))
+s>    ( QUESTION4 -1 -1.739e+04 1.012e+02 7.554e+01
+s>        ( - -1.189e+03 2 0)
+s>        ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+s>            ( - -1.267e+03 2 0)
+s>            ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>                ( - -3.439e+03 4 0)
+s>                ( - -1.121e+04 7 0))))INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( SILENCE -1 -8.525e+03 9.912e+01 3.716e+01
+|    ( - -6.044e+03 3 0)
+|    ( - -2.382e+03 2 0))
+s>    ( SILENCE -1 -8.525e+03 9.912e+01 3.716e+01
+s>        ( - -6.044e+03 3 0)
+s>        ( - -2.382e+03 2 0))INFO: dtree.c(1315): Comp split 51
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+|    ( - -1.426e+05 1 0)
+|    ( - -1.911e+03 1 0))
+s>    ( QUESTION0_2_R 1 -1.446e+05 7.756e+01 6.542e+02
+s>        ( - -1.426e+05 1 0)
+s>        ( - -1.911e+03 1 0))INFO: dtree.c(1315): Comp split 52
+INFO: dtree.c(1315): Comp split 53
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+|    ( - -1.541e+03 1 0)
+|    ( - -4.987e+03 4 0))
+s>    ( QUESTION16 -1 -6.617e+03 8.895e+01 2.900e+01
+s>        ( - -1.541e+03 1 0)
+s>        ( - -4.987e+03 4 0))INFO: dtree.c(1315): Comp split 54
+INFO: dtree.c(1315): Comp split 55
+INFO: dtree.c(1315): Comp split 56
+INFO: dtree.c(1315): Comp split 57
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+|    ( - -4.347e+04 3 0)
+|    ( - -3.295e+04 3 0))
+s>    ( SILENCE 1 -7.652e+04 1.040e+02 3.508e+02
+s>        ( - -4.347e+04 3 0)
+s>        ( - -3.295e+04 3 0))INFO: dtree.c(1315): Comp split 58
+INFO: dtree.c(1315): Comp split 59
+INFO: dtree.c(1315): Comp split 60
+INFO: dtree.c(1315): Comp split 61
+INFO: dtree.c(1315): Comp split 62
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+|    ( - -1.267e+03 2 0)
+|    ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|        ( - -3.439e+03 4 0)
+|        ( - -1.121e+04 7 0)))
+s>    ( QUESTION15 -1 -1.610e+04 9.617e+01 7.054e+01
+s>        ( - -1.267e+03 2 0)
+s>        ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>            ( - -3.439e+03 4 0)
+s>            ( - -1.121e+04 7 0)))INFO: dtree.c(1315): Comp split 63
+INFO: dtree.c(1315): Comp split 64
+INFO: dtree.c(1439): stop. leaf nodes are specific
+INFO: dtree.c(1478): Final simple tree
+|( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+|    ( - -3.439e+03 4 0)
+|    ( - -1.121e+04 7 0))
+s>    ( QUESTION2 -1 -1.473e+04 8.147e+01 6.454e+01
+s>        ( - -3.439e+03 4 0)
+s>        ( - -1.121e+04 7 0))INFO: dtree.c(1315): Comp split 65
+INFO: dtree.c(1315): Comp split 66
+INFO: dtree.c(1315): Comp split 67
+INFO: dtree.c(1315): Comp split 68
+INFO: dtree.c(1315): Comp split 69
+INFO: dtree.c(1318): stop. leaf nodes are specific
+Wed Mar 22 13:36:58 2023
