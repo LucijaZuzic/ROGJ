@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in `ls -1 *`; do echo $file;
+/usr/local/SPTK/bin/x2x +sf $file | /usr/local/SPTK/bin/frame -l 400 -p 80  | window -l 400 | pitch -l 400 -s 16 -t 4.5 -L 60 -H 179 > ../f0/$file;
+ done 

@@ -1,0 +1,28 @@
+Najprije waw2raw:
+
+na wav direktoriju napravi raw direktorij
+
+smarti@podroom:~/KCS/podaci_sinteza/sm04/audio/wav> ../pretvori_wav2raw
+
+cd raw
+rename wav raw *.wav
+mv *.raw ../../raw/
+cd ..
+rm raw
+
+Onda pitch: pazi moras zvati /usr/local/SPTK/bin/*
+
+smarti@podroom:~/PITCH> /usr/local/SPTK/bin/x2x +sf dugi.raw | /usr/local/SPTK/bin/frame -l 640 -p 80  | window -l 640 | pitch -l 640 -s 16 -t 8.5 -L 60 -H 179 > dugi.pitch
+
+
+Prikaz na ekranu:
+
+smarti@podroom:~/PITCH> fdrw < dugi.pitch | xgr
+smarti@podroom:~/PITCH> fdrw -y 0 250 -W 5.5 -H 3.4 < dugi.pitch | xgr
+
+dump:
+smarti@podroom:~/PITCH> dmp +s organizacija.raw | less
+
+na smarti@podroom:~/KCS/podaci_sinteza/sm04/audio> getpitch skripta
+
+rename raw f0 *.raw
